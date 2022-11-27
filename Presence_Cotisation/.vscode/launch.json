@@ -1,0 +1,38 @@
+{
+    "configurations": [
+
+        {
+            "type": "android",
+            "request": "launch",
+            "name": "Presence_Et_Cotisation",
+            "preLaunchTask": "run gradle",
+            "appSrcRoot": "${workspaceRoot}/app/src/main",
+            "apkFile": "${workspaceRoot}/app/build/outputs/apk/debug/app-debug.apk",
+            "adbPort": 5037,
+            "autoStartADB": true
+        },
+    ],
+    "tasks": [
+        {
+            "label": "run gradle",
+            "type": "shell",
+            "command": "${workspaceFolder}/gradlew",
+            "args": [
+                "assembleDebug"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

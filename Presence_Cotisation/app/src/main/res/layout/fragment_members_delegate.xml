@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <com.github.abdularis.civ.AvatarImageView
+        android:id="@+id/MEMBER_circle"
+        android:transitionName="@string/transition_name_circle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        app:state="IMAGE"
+        app:textSize="19sp"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/MEMBER_circle"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/MEMBER_name"
+            android:transitionName="@string/transition_name_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/MEMBER_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:transitionName="@string/transition_name_phone"
+
+            android:textColor="#9f9f9f"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent" android:layout_height="70dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:orientation="horizontal">-->
+
+<!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:src="@drawable/ic_account_circle"-->
+            <!--tools:ignore="ContentDescription" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/prenom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="17sp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textStyle="bold"/>-->
+    <!--</LinearLayout>-->
+
+<!--</android.support.v7.widget.CardView>-->
+
+
+<!--</LinearLayout>-->

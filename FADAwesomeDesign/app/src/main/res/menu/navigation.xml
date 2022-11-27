@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_edittext"
+        android:icon="@drawable/quotes"
+        android:title="@string/quotes" />
+
+    <item
+        android:id="@+id/navigation_background"
+        android:icon="@drawable/backgroung"
+        android:title="@string/background" />
+
+    <item
+        android:id="@+id/navigation_font"
+        android:icon="@drawable/ic_font"
+        android:title="@string/font" />
+
+    <item
+        android:id="@+id/navigation_fontcolor"
+        android:icon="@drawable/fontcolor"
+        android:title="@string/fontcolor" />
+
+    <item
+        android:id="@+id/navigation_shadow"
+        android:icon="@drawable/shadow"
+        android:title="@string/shadow" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_overlay"-->
+        <!--android:icon="@drawable/overlay"-->
+        <!--android:title="@string/overlay" />-->
+
+</menu>

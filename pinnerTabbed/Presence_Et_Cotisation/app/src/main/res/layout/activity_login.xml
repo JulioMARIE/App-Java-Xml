@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pres_cos_bg10"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_bg"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/logo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/loginusername"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="@string/loginuser"
+                android:inputType="text|textCapWords"
+                android:background="@drawable/roundedbg"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/ic_person"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/logo"
+                android:textColorHint="@color/logo" />
+
+            <AutoCompleteTextView
+                android:id="@+id/loginpwd"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="@string/loginpwd"
+                android:background="@drawable/roundedbg"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/ic_password"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="7dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/logo"
+                android:textColorHint="@color/logo"
+                android:inputType="textPassword"/>
+            <TextView
+                android:id="@+id/mtpoublie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motdepasseoublie"
+                android:textColor="@color/logo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="1dp"
+                android:gravity="right"/>
+
+            <Button
+                android:id="@+id/loginvalidate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/valider"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:background="@drawable/valider_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="showDashboardApp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_member"
+            android:icon="@drawable/ic_people"
+            android:title="@string/les_membres" />
+        <item
+            android:id="@+id/nav_cot"
+            android:icon="@drawable/ic_pages"
+            android:title="@string/les_cotisations"/>
+        <item
+            android:id="@+id/nav_dus"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/details_de_cotisation" />
+
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <item
+                android:id="@+id/nav_joke"
+                android:icon="@drawable/ic_sentiment"
+                android:title="@string/joke" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_school"
+                android:title="@string/about_us" />
+        </menu>
+    </item>
+
+</menu>

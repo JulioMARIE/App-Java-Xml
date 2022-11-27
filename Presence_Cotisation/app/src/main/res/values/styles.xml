@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#78909C</item>
+        <item name="colorPrimaryDark">@color/logo</item>
+        <item name="colorAccent">#90A4AE</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">#78909C</item>-->
+    <!--<item name="colorPrimaryDark">@color/logo</item>-->
+    <!--<item name="colorAccent">#90A4AE</item>-->
+    <!--</style>-->
+
+    <style name="CustomTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CustomTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="CustomTextStyle">
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/albondigas</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
